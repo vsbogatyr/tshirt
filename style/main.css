@@ -908,10 +908,6 @@ body {
     margin-right: 26px;
 }
 
-.sidebar__close-icon {
-    fill: #1b1b1b;
-}
-
 .information__col-right {
     padding: 45px 60px 45px 43px;
     flex: 2;
