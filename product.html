@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="1440">
     <title>Lost-shirt</title>
     <link rel="stylesheet" href="style/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <header class="header header__product">
-            <a class="logo">
+            <a class="logo" href="index.html">
                 <img src="img/content/logos/logo-main.png" alt="lost shirt" class="logo__pic">
             </a>
             <div class="stock">
@@ -37,19 +37,19 @@
             <section class="catalog-product">
                 <div class="catalog-product__content">
                     <ul class="catalog-product__photos catalog-product__content-block">
-                        <li class="catalog-product__photos-item visible">
+                        <li class="catalog-product__photos-item black visible">
                             <img src="img/tshirts/tshirt_07.png" alt="tshirt" class="catalog-product__img">
                         </li>
-                        <li class="catalog-product__photos-item">
+                        <li class="catalog-product__photos-item white">
                             <img src="img/tshirts/tshirt_08.png" alt="tshirt" class="catalog-product__img">
                         </li>
-                        <li class="catalog-product__photos-item">
+                        <li class="catalog-product__photos-item green">
                             <img src="img/tshirts/tshirt_09.png" alt="tshirt" class="catalog-product__img">
                         </li>
-                        <li class="catalog-product__photos-item">
+                        <li class="catalog-product__photos-item blue">
                             <img src="img/tshirts/tshirt_10.png" alt="tshirt" class="catalog-product__img">
                         </li>
-                        <li class="catalog-product__photos-item">
+                        <li class="catalog-product__photos-item red">
                             <img src="img/tshirts/tshirt_11.png" alt="tshirt" class="catalog-product__img">
                         </li>
                     </ul>
@@ -101,24 +101,24 @@
                                 </li>
                             </ul>
                             <ul class="catalog-product__colors">
-                                <li class="catalog-product__color-item">
-                                    <a href="#"
-                                        class="catalog-product__color-link catalog-product__color-link_black"></a>
-                                </li>
-                                <li class="catalog-product__color-item">
-                                    <a href="#"
-                                        class="catalog-product__color-link catalog-product__color-link_white"></a>
-                                </li>
                                 <li class="catalog-product__color-item active">
                                     <a href="#"
-                                        class="catalog-product__color-link catalog-product__color-link_green"></a>
+                                        class="catalog-product__color-link catalog-product__color-link_black" data-color="black"></a>
                                 </li>
                                 <li class="catalog-product__color-item">
                                     <a href="#"
-                                        class="catalog-product__color-link catalog-product__color-link_blue"></a>
+                                        class="catalog-product__color-link catalog-product__color-link_white" data-color="white"></a>
                                 </li>
                                 <li class="catalog-product__color-item">
-                                    <a href="#" class="catalog-product__color-link catalog-product__color-link_red"></a>
+                                    <a href="#"
+                                        class="catalog-product__color-link catalog-product__color-link_green" data-color="green"></a>
+                                </li>
+                                <li class="catalog-product__color-item">
+                                    <a href="#"
+                                        class="catalog-product__color-link catalog-product__color-link_blue" data-color="blue"></a>
+                                </li>
+                                <li class="catalog-product__color-item">
+                                    <a href="#" class="catalog-product__color-link catalog-product__color-link_red" data-color="red"></a>
                                 </li>
                             </ul>
                             <div class="button-buy">
@@ -131,20 +131,20 @@
             <section class="information">
                 <ul class="filter">
                     <li class="filter__item filter__item_active">
-                        <a href="#" class="filter__link">описание</a>
+                        <a href="#" class="filter__link" data-info="description">описание</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">таблица размеров</a>
+                        <a href="#" class="filter__link" data-info="table-size">таблица размеров</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">условия доставки</a>
+                        <a href="#" class="filter__link" data-info="delivery">условия доставки</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">о бренде</a>
+                        <a href="#" class="filter__link" data-info="brand">о бренде</a>
                     </li>
                 </ul>
                 <div class="information__block-content">
-                    <div class="information__block">
+                    <div class="information__block active" id="description">
                         <div class="information__col-left">
                             <ul class="information__care-list">
                                 <li class="information__care-item">
@@ -196,7 +196,7 @@
                             свободный дресс-код.
                         </div>
                     </div>
-                    <div class="information__block active">
+                    <div class="information__block" id="table-size">
                         <div class="information__col-left">
                             <div class="information__size-block">
                                 <div class="information__size-img">
@@ -328,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="information__block">
+                    <div class="information__block" id="delivery">
                         <div class="information__col-left">
                             <div class="information__logo-delivery">
                                 <img src="img/content/logos/express.png" alt="express"
@@ -344,7 +344,7 @@
                             (Цена приведена для ориентира и может отличаться в зависимости от дальности и веса посылки)
                         </div>
                     </div>
-                    <div class="information__block">
+                    <div class="information__block" id="brand">
                         <div class="information__col-left">
                             <div class="information__logo-brand">
                                 <img src="img/content/logos/harley.png" alt="harley" class="information__pic-brand">

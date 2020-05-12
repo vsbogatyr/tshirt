@@ -703,6 +703,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    transition: opacity .3s;
 }
 
 .catalog-product__img {
@@ -712,10 +713,6 @@ body {
 
 .catalog-product__photos-item.visible {
     opacity: 1;
-}
-
-.catalog__product-detalis {
-    
 }
 
 .catalog-product__container {
@@ -738,6 +735,7 @@ body {
     font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 47px;
+    letter-spacing: 4px;
 }
 
 .catalog-product__price {
@@ -808,7 +806,7 @@ body {
 }
 
 .catalog-product__colors {
-    display: flex;
+    display: inline-flex;
     margin-bottom: 25px;
 }
 
