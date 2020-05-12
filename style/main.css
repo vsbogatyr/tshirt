@@ -900,10 +900,16 @@ body {
 
 .information__care-item {
     display: flex;
+    align-items: center;
 }
 
 .information__care-pic {
     margin-right: 26px;
+}
+
+.information__care-icon {
+    width: 29px;
+    height: 29px;
 }
 
 .information__col-right {
