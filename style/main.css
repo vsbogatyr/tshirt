@@ -4,7 +4,6 @@
          url('../fonts/alegreyasanssc-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
@@ -719,6 +718,7 @@ body {
 .catalog-product__container {
     border-bottom: 1px solid #e0d9c8;
     padding: 26px;
+    font-size: 13px;
 }
 
 .catalog-product__container:last-child {
