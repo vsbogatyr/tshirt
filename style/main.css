@@ -335,7 +335,7 @@ body {
 }
 
 .filter__item {
-    margin-right: 38px;
+    margin-right: 23px;
 }
 
 .filter__item_active .filter__link{
@@ -350,7 +350,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    padding: 5px 28px 5px 13px;
+    padding: 5px 22px 5px;
     font-weight: bold;
     letter-spacing: 0.1em;
 }
